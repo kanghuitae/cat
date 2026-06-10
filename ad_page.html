@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>광고 보고 사료 받기</title>
+  <style>
+    body { margin:0; height:100vh; display:flex; flex-direction:column;
+           align-items:center; justify-content:center; background:#1c1c1e; color:#eee;
+           font-family:-apple-system,"Apple SD Gothic Neo",sans-serif; }
+    #ad-container { width:100%; max-width:640px; }
+    #msg { font-size:14px; color:#999; margin-top:14px; }
+  </style>
+</head>
+<body>
+  <div id="ad-container"></div>
+  <p id="msg">광고를 불러오는 중… 🐱</p>
+
+  <script>
+    const q = new URLSearchParams(location.search);
+    const provider = (q.get("provider") || "gamemonetize").toLowerCase();
+
+    function send(status) {
+      try { window.webkit.messageHandlers.adEvent.postMessage(String(status)); } catch (e) {}
+      console.log("[ad]", status);
+    }
+    function setMsg(t) { document.getElementById("msg").textContent = t; }
+
+    // 광고가 30초 안에 끝/실패 신호를 안 주면 실패 처리 (멈춤 방지)
+    let settled = false;
+    function settle(status) { if (settled) return; settled = true; send(status); }
+    setTimeout(() => settle("ad-error:timeout"), 30000);
+
+    if (provider === "applixir") {
+      loadScript("https://cdn.applixir.com/applixir.app.v6.0.1.js", () => {
+        try {
+          initializeAndOpenPlayer({
+            apiKey: q.get("apiKey"),
+            injectionElementId: "ad-container",
+            adStatusCallbackFn: (s) => {
+              const v = String(s).toLowerCase();
+              if (v.includes("watched") || v.includes("rewarded")) { setMsg("시청 완료! 🍚"); settle("ad-watched"); }
+            },
+            adErrorCallbackFn: (e) => settle("ad-error:" + (e && e.message ? e.message : e)),
+          });
+        } catch (e) { settle("ad-error:" + e.message); }
+      }, () => settle("ad-error:script"));
+    } else {
+      // GameMonetize: 광고가 끝나면 SDK_GAME_START 이벤트가 발생 → 보상
+      window.SDK_OPTIONS = {
+        gameId: q.get("gameId"),
+        onEvent: (a) => {
+          switch (a.name) {
+            case "SDK_GAME_START": setMsg("시청 완료! 🍚"); settle("ad-watched"); break;
+            case "SDK_ERROR":      settle("ad-error:sdk"); break;
+          }
+        },
+      };
+      window.SDK_OPTIONS.advertisementSettings = { autoplay: false };
+      loadScript("https://api.gamemonetize.com/sdk.js", () => {
+        // sdk가 준비되면 광고 노출 시도 (showBanner = 전면 광고)
+        const tryShow = () => {
+          if (typeof sdk !== "undefined" && sdk.showBanner) { sdk.showBanner(); }
+          else setTimeout(tryShow, 300);
+        };
+        tryShow();
+      }, () => settle("ad-error:script"));
+    }
+
+    function loadScript(src, onload, onerror) {
+      const s = document.createElement("script");
+      s.src = src; s.onload = onload; s.onerror = onerror;
+      document.head.appendChild(s);
+    }
+  </script>
+</body>
+</html>
