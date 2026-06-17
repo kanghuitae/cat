@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ── SEO 기본 ── -->
-  <title>고양이 키우기 — 맥에 작은 고양이가 이사 옵니다</title>
-  <meta name="description" content="일하는 당신 곁, 화면 구석에서 제 할 일 하며 사는 픽셀 고양이. 가끔 알림을 물어다 주고, 어느새 식빵을 굽고 있습니다. macOS 무료." />
+  <title>고양이 키우기 — 화면에 작은 고양이가 이사 옵니다</title>
+  <meta name="description" content="일하는 당신 곁, 화면 구석에서 제 할 일 하며 사는 픽셀 고양이. 가끔 알림을 물어다 주고, 어느새 식빵을 굽고 있습니다. macOS·Windows, 한 마리는 평생 무료." />
   <meta name="author" content="kanghuitae" />
   <link rel="canonical" href="https://kanghuitae.github.io/cat/" />
   <meta name="robots" content="index, follow" />
@@ -16,14 +16,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
   <meta property="og:site_name" content="고양이 키우기" />
-  <meta property="og:title" content="고양이 키우기 — 맥에 작은 고양이가 이사 옵니다" />
+  <meta property="og:title" content="고양이 키우기 — 화면에 작은 고양이가 이사 옵니다" />
   <meta property="og:description" content="화면 구석에서 제 할 일 하며 사는 픽셀 고양이. macOS·Windows, 한 마리는 평생 무료." />
   <meta property="og:url" content="https://kanghuitae.github.io/cat/" />
   <meta property="og:image" content="https://kanghuitae.github.io/cat/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="고양이 키우기 — 맥에 작은 고양이가 이사 옵니다" />
+  <meta name="twitter:title" content="고양이 키우기 — 화면에 작은 고양이가 이사 옵니다" />
   <meta name="twitter:description" content="화면 구석에서 제 할 일 하며 사는 픽셀 고양이. macOS·Windows, 한 마리는 평생 무료." />
   <meta name="twitter:image" content="https://kanghuitae.github.io/cat/assets/og.png" />
 
@@ -42,9 +42,9 @@
     "@type": "SoftwareApplication",
     "name": "고양이 키우기",
     "applicationCategory": "EntertainmentApplication",
-    "operatingSystem": "macOS 13.0+",
+    "operatingSystem": "macOS 13.0+, Windows 10/11",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
-    "description": "맥 화면 구석에서 함께 사는 작은 픽셀 고양이. 돌보고, 놀아주고, 가끔은 그냥 바라보는 데스크탑 펫.",
+    "description": "데스크탑 구석에서 함께 사는 작은 픽셀 고양이. 돌보고, 놀아주고, 가끔은 그냥 바라보는 데스크탑 펫. macOS·Windows.",
     "url": "https://kanghuitae.github.io/cat/",
     "image": "https://kanghuitae.github.io/cat/assets/og.png",
     "softwareVersion": "1.0"
@@ -135,6 +135,12 @@
       background:var(--accent); border-radius:4px; font-size:13px; }
     ol.steps b { color:var(--ink); }
 
+    .tracks { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; max-width:720px; margin:0 auto; text-align:left; }
+    .track { background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:18px 20px; }
+    .track h3 { font-family:"Galmuri11"; font-size:14px; margin:0 0 6px; color:var(--accent); }
+    .track ol.steps { margin:0; max-width:none; }
+    .track ol.steps li:last-child { border-bottom:none; padding-bottom:2px; }
+
     footer { padding:40px 0 60px; text-align:center; color:var(--muted); font-size:11px; border-top:1px solid var(--line); }
     .center { text-align:center; }
   </style>
@@ -143,7 +149,7 @@
   <header class="hero">
     <div class="wrap">
       <span class="badge">macOS · Windows · 무료</span>
-      <h1>당신의 맥에<br><span class="hl">작은 고양이</span>가 이사 옵니다</h1>
+      <h1>당신의 화면에<br><span class="hl">작은 고양이</span>가 이사 옵니다</h1>
       <p class="sub">일하는 동안 화면 한켠에서 제 할 일을 하며 삽니다.
         문득 보면 식빵을 굽고 있고, 어떤 날은 당신 대신 알림을 물어다 줘요.</p>
       <div class="cta-row">
@@ -175,7 +181,7 @@
       <div class="features">
         <div class="card"><div class="ic">🍞</div><h3>문득 보면 식빵을 굽고 있어요</h3><p>마감에 쫓기다 고개를 들면, 화면 구석에서 얌전히 앞발을 모으고 있습니다. 잠깐 숨 돌리라는 신호일지도요.</p></div>
         <div class="card"><div class="ic">📨</div><h3>소식을 물어다 줍니다</h3><p>새 알림이 뜨면 쪼르르 달려가 입에 물고 옵니다. 받아줄 때까지 의기양양하게 들고 다녀요.</p></div>
-        <div class="card"><div class="ic">👊</div><h3>안 읽은 건 못 참아요</h3><p>Dock에 빨간 배지가 쌓이면 그 앞에 앉아 앞발로 톡톡. 답장하라는 잔소리도 이 정도면 귀엽죠.</p></div>
+        <div class="card"><div class="ic">👊</div><h3>안 읽은 건 못 참아요</h3><p>읽지 않은 알림 배지가 쌓이면 그 앞에 앉아 앞발로 톡톡. 답장하라는 잔소리도 이 정도면 귀엽죠. 😼</p></div>
         <div class="card"><div class="ic">🧶</div><h3>털실 하나면 한참 놀아요</h3><p>마우스 커서가 털실이 되는 순간, 온 집(화면)이 운동장이 됩니다. 점프 실력이 꽤 좋아요.</p></div>
         <div class="card"><div class="ic">🍚</div><h3>챙겨줄수록 가까워져요</h3><p>밥그릇을 채워주고 화장실을 치워주세요. 잘 챙겨주면 기분이 좋아지고, 굶기면… 시위합니다.</p></div>
         <div class="card"><div class="ic">💻</div><h3>Claude Code와 함께 일해요</h3><p>코딩 중이면 고양이가 옆에서 타닥타닥 같이 일하고, 작업이 끝나면 폴짝 뛰며 알려줍니다. 개발자의 작은 동료.</p></div>
@@ -205,12 +211,24 @@
 
     <section id="install">
       <h2>데려오는 <span class="em">방법</span></h2>
-      <ol class="steps">
-        <li><code>CatApp.dmg</code>를 열고 고양이를 <b>응용 프로그램</b> 폴더로 드래그</li>
-        <li>실행하면 메뉴 막대에 <b>🐱</b>가 나타나요 — 이 집의 초인종입니다</li>
-        <li>알림 심부름까지 시키려면 <b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>을 허락해 주세요</li>
-        <li>끝! 이제 화면 어딘가에서 첫 고양이가 어슬렁거리고 있을 거예요</li>
-      </ol>
+      <div class="tracks">
+        <div class="track">
+          <h3>🍎 macOS</h3>
+          <ol class="steps">
+            <li><code>CatApp.dmg</code>를 열고 고양이를 <b>응용 프로그램</b> 폴더로 드래그</li>
+            <li>실행하면 <b>메뉴 막대에 🐱</b>가 나타나요 — 이 집의 초인종입니다</li>
+            <li>알림 심부름까지 시키려면 <b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>을 한 번만 허락해 주세요</li>
+          </ol>
+        </div>
+        <div class="track">
+          <h3>⊞ Windows</h3>
+          <ol class="steps">
+            <li><b>Microsoft Store</b>에서 '설치' 한 번이면 끝 — 따로 손볼 설정은 없어요</li>
+            <li>실행하면 <b>작업 표시줄 트레이에 🐱</b>가 톡 하고 자리를 잡습니다</li>
+          </ol>
+        </div>
+      </div>
+      <p class="sub" style="margin-top:24px">끝! 이제 화면 어딘가에서 첫 고양이가 어슬렁거리고 있을 거예요. 🐾</p>
     </section>
   </main>
 
