@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kanghuitae.github.io/cat/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://kanghuitae.github.io/cat/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://kanghuitae.github.io/cat/notes.html</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://kanghuitae.github.io/cat/privacy.html</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://kanghuitae.github.io/cat/ko/</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://kanghuitae.github.io/cat/ko/notes.html</loc><lastmod>2026-09-05</lastmod></url>
+  <url><loc>https://kanghuitae.github.io/cat/ko/privacy.html</loc><lastmod>2026-09-05</lastmod></url>
 </urlset>
