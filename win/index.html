@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Windows installer — Desktop Cat</title>
-<meta name="description" content="Desktop Cat 0.4.18 for Windows: language selection and cleanup fixes.">
+<meta name="description" content="Desktop Cat 0.4.19 for Windows: fixes for cats getting stuck at screen edges after play.">
 <link rel="canonical" href="https://kanghuitae.github.io/cat/win/">
 <link rel="icon" href="../assets/favicon.png"><script src="../analytics.js" defer></script>
 <style>
@@ -31,12 +31,17 @@
   </style></head><body><main class="wrap">
 <a class="back" href="../">← Back to Desktop Cat</a>
 <h1>Desktop Cat for Windows</h1>
-<p class="muted">Direct installer · version 0.4.18 · September 5, 2026</p>
+<p class="muted">Direct installer · version 0.4.19 · September 5, 2026</p>
 <p>Little pixel cats for your desktop, with feeding, petting and a home of their own.</p>
-<p><a href="DesktopCatSetup-0.4.18.exe" download>Download Windows installer (0.4.18)</a></p>
+<p><a href="DesktopCatSetup-0.4.19.exe" download>Download Windows installer (0.4.19)</a></p>
 <p>Windows 10 version 2004 or later, 64-bit. The .NET runtime is included.</p>
 <p>Already using version 0.5.x from the Microsoft Store? Keep your current installation and get updates through <a href="https://apps.microsoft.com/detail/9p3lnmk46jjh">the Store</a>. This download updates the separate 0.4.x installer version.</p>
-<h2>What changed</h2><ul>
+<h2>What changed in 0.4.19</h2><ul>
+<li>Chased cats stop at a screen edge and walk back inward instead of running into the corner.</li>
+<li>Both cats return to normal behavior when play ends or one is picked up, fixing frozen grooming and hissing poses.</li>
+<li>Walking and running stay inside the screen, and cats outside a resized working area are brought back.</li>
+</ul>
+<h2>Also included</h2><ul>
 <li>English by default, with Korean or Japanese suggested when detected. Confirm your language during installation and change it anytime in Settings.</li>
 <li>Cleanup clicks now work across the transparent area around poop and litter boxes.</li>
 <li>Better tray cleanup when quitting and removal of the old installer shortcut on upgrade.</li>
