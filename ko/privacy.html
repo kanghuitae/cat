@@ -19,19 +19,20 @@
 <body><nav aria-label="Language" style="text-align:right;padding:16px 20px;font-size:13px"><a href="../privacy.html" lang="en">English</a> · <a href="privacy.html" lang="ko">한국어</a></nav><p><a href="./">← 홈으로</a></p>
 
 <h1>🐱 고양이 키우기 — 개인정보 처리방침</h1>
-<p class="muted">시행일: 2026-06-12 · 적용 대상: macOS 앱 "고양이 키우기", Windows 앱 "Desktop Cat"</p>
+<p class="muted">시행일: 2026-09-05 · 적용 대상: macOS 앱 "고양이 키우기", Windows 앱 "Desktop Cat"</p>
 
 <h2>1. 요약</h2>
-<p><b>이 앱은 자체 서버가 없으며, 개인정보를 수집·저장·전송하지 않습니다.</b>
-고양이 상태, 이름, 사료 재고 등 모든 게임 데이터는 사용자의 기기에만 저장됩니다.</p>
+<p>고양이 저장 데이터를 받는 자체 서버를 운영하지 않습니다. 앱은 게임과 입양 데이터를 기기에 저장합니다. 제3자 결제·웹사이트·광고 서비스의 정보 처리는 아래와 같습니다.</p>
 
 <h2>2. 기기 안에서만 처리되는 정보</h2>
 <ul>
   <li><b>게임 저장 데이터</b> — 고양이 스탯·이름·오브젝트 배치 등은 로컬 파일로만 저장되며 외부로 전송되지 않습니다.</li>
-  <li><b>알림·Dock 배지 읽기 (macOS, 선택)</b> — "알림 물어오기" 기능을 켜면 손쉬운 사용(Accessibility) 권한으로
+  <li><b>알림·Dock 배지 읽기 (웹사이트 macOS 배포판, 선택)</b> — "알림 물어오기" 기능을 켜면 손쉬운 사용(Accessibility) 권한으로
       화면의 알림 배너·배지 텍스트를 읽습니다. 이 내용은 고양이 연출에만 쓰이고 즉시 버려지며, 저장·전송되지 않습니다.</li>
-  <li><b>Claude Code 세션 감지 (선택)</b> — 세션 고양이 기능은 <code>~/.claude/projects</code> 폴더의
+  <li><b>Claude Code 세션 감지 (웹사이트 macOS 배포판, 선택)</b> — 세션 고양이 기능은 <code>~/.claude/projects</code> 폴더의
       파일 수정 시각과 폴더 이름만 로컬에서 읽습니다. 파일 내용은 읽지 않으며 아무것도 전송되지 않습니다.</li>
+  <li><b>미리 알림 (Mac App Store/TestFlight 배포판, 선택)</b> — 기본적으로 꺼져 있습니다. 사용자가 켜면 미리 알림 읽기 권한을 요청하며, 기한과 제목을 기기에서 고양이 연출에 사용합니다. 앱은 이 정보를 업로드하지 않습니다.</li>
+  <li><b>입양 기록 (Mac App Store/TestFlight 배포판)</b> — 중복 지급을 방지하기 위해 고양이 품종과 검증된 StoreKit 거래 식별자를 기기에 함께 저장합니다. 앱 데이터를 삭제하면 완료된 소비형 입양 구매를 복원할 수 없습니다.</li>
   <li><b>미디어 재생·배터리·자리비움 상태</b> — 고양이 반응 연출을 위해 기기에서만 확인합니다.</li>
 </ul>
 
@@ -42,18 +43,20 @@
       IP 기반 대략적 위치가 처리되며, 이 정보는 웹사이트 개선과 배포 현황 확인에만 쓰입니다. 브라우저 쿠키 차단
       또는 Google의 GA 차단 부가기능으로 거부할 수 있습니다.
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
-  <li><b>결제 (Gumroad)</b> — 품종 입양 결제는 브라우저의 Gumroad 페이지에서 진행됩니다. 이메일·결제 정보는
+  <li><b>결제 (웹사이트 배포판, Gumroad)</b> — 품종 입양 결제는 브라우저의 Gumroad 페이지에서 진행됩니다. 이메일·결제 정보는
       Gumroad가 직접 처리하며 앱은 라이선스 키의 유효성만 Gumroad API로 확인합니다.
       <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad 개인정보 처리방침</a></li>
+  <li><b>결제 (Mac App Store/TestFlight 배포판, Apple)</b> — Apple StoreKit을 사용합니다. Apple이 App Store 계정과 결제 정보를 처리하며, 앱은 거래를 검증하고 입양 내역을 기기에 저장합니다. 앱은 카드 정보를 받지 않습니다.
+      <a href="https://www.apple.com/legal/privacy/data/en/app-store/" target="_blank" rel="noopener">App Store 및 개인정보 보호</a></li>
   <li><b>광고 (GameMonetize)</b> — "광고 보기"는 브라우저에서 광고 포함 게임 페이지를 엽니다. 광고 쿠키·식별자는
       해당 페이지와 광고 사업자의 정책을 따릅니다.
       <a href="https://gamemonetize.com/privacyplayer" target="_blank" rel="noopener">GameMonetize 정책</a></li>
-  <li><b>업데이트 확인 (GitHub Pages)</b> — 새 버전 확인을 위해 버전 정보 파일을 내려받습니다.
+  <li><b>업데이트 확인 (웹사이트 배포판, GitHub Pages)</b> — 새 버전 확인을 위해 버전 정보 파일을 내려받습니다.
       이때 GitHub의 서버 로그에 IP 주소가 남을 수 있습니다 (GitHub 정책 적용).</li>
 </ul>
 
 <h2>4. 어린이</h2>
-<p>앱 자체는 개인정보를 수집하지 않으며, 결제·광고는 모두 외부 브라우저에서 성인 보호자의 결제 수단/판단이 필요한 형태로 진행됩니다.</p>
+<p>결제와 선택형 광고 포함 브라우저 게임은 성인 보호자의 감독이 필요합니다. 웹사이트 배포판은 브라우저 결제를, Mac App Store 배포판은 Apple 인앱결제와 기기에 설정된 계정 제한을 사용합니다.</p>
 
 <h2>5. 문의</h2>
 <p>개인정보 관련 문의: <a href="mailto:gmlxo9917@gmail.com">gmlxo9917@gmail.com</a></p>
