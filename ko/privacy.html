@@ -19,7 +19,7 @@
 <body><nav aria-label="Language" style="text-align:right;padding:16px 20px;font-size:13px"><a href="../privacy.html" lang="en">English</a> · <a href="privacy.html" lang="ko">한국어</a></nav><p><a href="./">← 홈으로</a></p>
 
 <h1>🐱 고양이 키우기 — 개인정보 처리방침</h1>
-<p class="muted">시행일: 2026-09-05 · 적용 대상: macOS 앱 "고양이 키우기", Windows 앱 "Desktop Cat"</p>
+<p class="muted">시행일: 2026-09-07 · 적용 대상: macOS 앱 "고양이 키우기", Windows 앱 "Desktop Cat"</p>
 
 <h2>1. 요약</h2>
 <p>고양이 저장 데이터를 받는 자체 서버를 운영하지 않습니다. 앱은 게임과 입양 데이터를 기기에 저장합니다. 제3자 결제·웹사이트·광고 서비스의 정보 처리는 아래와 같습니다.</p>
@@ -32,7 +32,7 @@
   <li><b>Claude Code 세션 감지 (웹사이트 macOS 배포판, 선택)</b> — 세션 고양이 기능은 <code>~/.claude/projects</code> 폴더의
       파일 수정 시각과 폴더 이름만 로컬에서 읽습니다. 파일 내용은 읽지 않으며 아무것도 전송되지 않습니다.</li>
   <li><b>미리 알림 (Mac App Store/TestFlight 배포판, 선택)</b> — 기본적으로 꺼져 있습니다. 사용자가 켜면 미리 알림 읽기 권한을 요청하며, 기한과 제목을 기기에서 고양이 연출에 사용합니다. 앱은 이 정보를 업로드하지 않습니다.</li>
-  <li><b>입양 기록 (Mac App Store/TestFlight 배포판)</b> — 중복 지급을 방지하기 위해 고양이 품종과 검증된 StoreKit 거래 식별자를 기기에 함께 저장합니다. 앱 데이터를 삭제하면 완료된 소비형 입양 구매를 복원할 수 없습니다.</li>
+  <li><b>고양이 데이터 (Mac App Store/TestFlight 무료 배포판, 버전 1.0 빌드 2부터)</b> — 이름·품종·돌보기 상태를 기기에 저장합니다. 미출시 빌드 1에서 저장한 고양이도 로컬에서 보존하며, 무료 배포판은 새로운 구매 거래를 처리하지 않습니다.</li>
   <li><b>미디어 재생·배터리·자리비움 상태</b> — 고양이 반응 연출을 위해 기기에서만 확인합니다.</li>
 </ul>
 
@@ -46,17 +46,15 @@
   <li><b>결제 (웹사이트 배포판, Gumroad)</b> — 품종 입양 결제는 브라우저의 Gumroad 페이지에서 진행됩니다. 이메일·결제 정보는
       Gumroad가 직접 처리하며 앱은 라이선스 키의 유효성만 Gumroad API로 확인합니다.
       <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad 개인정보 처리방침</a></li>
-  <li><b>결제 (Mac App Store/TestFlight 배포판, Apple)</b> — Apple StoreKit을 사용합니다. Apple이 App Store 계정과 결제 정보를 처리하며, 앱은 거래를 검증하고 입양 내역을 기기에 저장합니다. 앱은 카드 정보를 받지 않습니다.
-      <a href="https://www.apple.com/legal/privacy/data/en/app-store/" target="_blank" rel="noopener">App Store 및 개인정보 보호</a></li>
-  <li><b>광고 (GameMonetize)</b> — "광고 보기"는 브라우저에서 광고 포함 게임 페이지를 엽니다. 광고 쿠키·식별자는
-      해당 페이지와 광고 사업자의 정책을 따릅니다.
-      <a href="https://gamemonetize.com/privacyplayer" target="_blank" rel="noopener">GameMonetize 정책</a></li>
+  <li><b>Mac App Store 무료 배포판 (버전 1.0 빌드 2부터)</b> — 치즈 고양이 한 마리가 포함되며 인앱 결제·구독·외부 결제·라이선스 키 활성화 기능이 없습니다. 앱 다운로드에 사용하는 App Store 계정은 Apple이 처리합니다. 웹사이트 배포판의 외부 결제는 별도로 유지됩니다.</li>
+  <li><b>선택형 광고 보상 (GameMonetize)</b> — "광고 보기"는 기본 브라우저에서 보급품 보상용 광고 페이지를 엽니다. 앱은 이 링크에 고양이 데이터·미리 알림·앱이나 기기 식별자를 전달하지 않습니다. 제공업체는 IP 주소와 기기·브라우저 특성을 기록하고 쿠키를 사용하며, 광고 파트너는 사이트 방문·광고 상호작용 정보를 맞춤형 광고와 측정에 사용할 수 있습니다. 브라우저 개인정보 설정과 제공업체의 거부 절차를 이용할 수 있습니다. 앱으로 돌아오는 링크에는 보상 결과와 시각만 있으며 고양이나 App Store 계정 식별 정보는 없습니다.
+      <a href="https://io.gamemonetize.com/privacy.html" target="_blank" rel="noopener">GameMonetize 정책 및 거부 방법</a></li>
   <li><b>업데이트 확인 (웹사이트 배포판, GitHub Pages)</b> — 새 버전 확인을 위해 버전 정보 파일을 내려받습니다.
       이때 GitHub의 서버 로그에 IP 주소가 남을 수 있습니다 (GitHub 정책 적용).</li>
 </ul>
 
 <h2>4. 어린이</h2>
-<p>결제와 선택형 광고 포함 브라우저 게임은 성인 보호자의 감독이 필요합니다. 웹사이트 배포판은 브라우저 결제를, Mac App Store 배포판은 Apple 인앱결제와 기기에 설정된 계정 제한을 사용합니다.</p>
+<p>웹사이트 배포판의 결제와 선택형 광고 페이지 이용은 성인 보호자의 감독이 필요합니다. 무료 Mac App Store 배포판에는 결제 기능이 없습니다. 브라우저 광고는 선택 사항이며 광고 제공업체의 정책을 따릅니다.</p>
 
 <h2>5. 문의</h2>
 <p>개인정보 관련 문의: <a href="mailto:gmlxo9917@gmail.com">gmlxo9917@gmail.com</a></p>

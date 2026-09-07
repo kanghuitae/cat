@@ -19,7 +19,7 @@
 <body><nav aria-label="Language" style="text-align:right;padding:16px 20px;font-size:13px"><a href="privacy.html" lang="en">English</a> · <a href="ko/privacy.html" lang="ko">한국어</a></nav><p><a href="./">← Home</a></p>
 
 <h1>🐱 Desktop Cat — Privacy Policy</h1>
-<p class="muted">Effective: 2026-09-05 · Applies to: "Desktop Cat" (formerly "고양이 키우기") for macOS and "Desktop Cat" for Windows</p>
+<p class="muted">Effective: 2026-09-07 · Applies to: "Desktop Cat" (formerly "고양이 키우기") for macOS and "Desktop Cat" for Windows</p>
 
 <h2>1. Summary</h2>
 <p>We do not run a backend that receives your cat save data. The app stores gameplay and adoption data on your device. Third-party payment, website, and ad services process data as described below.</p>
@@ -32,7 +32,7 @@
   <li><b>Claude Code session detection (website macOS edition, optional)</b> — reads only file modification times and folder names under
       <code>~/.claude/projects</code>, locally. File contents are never read; nothing is transmitted.</li>
   <li><b>Reminders (Mac App Store/TestFlight edition, optional)</b> — off by default. When enabled, the app requests permission to read reminders and uses due dates and titles locally to animate a cat carrying a reminder. This information is not uploaded by the app.</li>
-  <li><b>Adoption history (Mac App Store/TestFlight edition)</b> — cat breeds and verified StoreKit transaction identifiers are stored together locally to prevent duplicate delivery. Completed consumable adoptions cannot be restored after app data is deleted.</li>
+  <li><b>Cat data (Mac App Store/TestFlight free edition, version 1.0 build 2 onward)</b> — cat names, breeds and care state stay on your device. Any cats saved by the unreleased build 1 are preserved locally; the free edition does not process new purchase transactions.</li>
   <li><b>Media playback / battery / idle state</b> — checked locally to drive cat reactions.</li>
 </ul>
 
@@ -46,17 +46,15 @@
   <li><b>Payments (website download edition, Gumroad)</b> — breed adoptions are purchased on Gumroad in your browser. Your email and payment
       details are handled by Gumroad; the app only verifies license keys via the Gumroad API.
       <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad Privacy Policy</a></li>
-  <li><b>Payments (Mac App Store/TestFlight edition, Apple)</b> — purchases use Apple StoreKit. Apple handles your App Store account and payment details. The app verifies transactions and saves adoption history locally; it does not receive your card details.
-      <a href="https://www.apple.com/legal/privacy/data/en/app-store/" target="_blank" rel="noopener">App Store &amp; Privacy</a></li>
-  <li><b>Ads (GameMonetize)</b> — "Watch ad" opens an ad-supported game page in your browser; ad cookies and
-      identifiers are governed by that page and its ad providers.
-      <a href="https://gamemonetize.com/privacyplayer" target="_blank" rel="noopener">GameMonetize policy</a></li>
+  <li><b>Mac App Store free edition (version 1.0 build 2 onward)</b> — includes one orange cat with no in-app purchases, subscriptions, external checkout or license-key activation. Apple handles the App Store account used to download the app. The website download edition retains its separate external purchase system.</li>
+  <li><b>Optional advertising rewards (GameMonetize)</b> — "Watch ad" opens a supply-reward advertising page in your default browser. The app does not send cat data, reminders or an app/device identifier in this link. The provider logs IP addresses, device/browser characteristics and uses cookies; its advertising partners may use site visits and ad interactions for targeted advertising and measurement. Browser privacy settings and provider opt-outs apply. The return link only reports the reward result and timestamp; it does not identify your cat or App Store account.
+      <a href="https://io.gamemonetize.com/privacy.html" target="_blank" rel="noopener">GameMonetize policy and opt-out information</a></li>
   <li><b>Update check (website download edition, GitHub Pages)</b> — the app downloads a version file to check for updates; your IP address
       may appear in GitHub's server logs (GitHub's policies apply).</li>
 </ul>
 
 <h2>4. Children</h2>
-<p>Purchases and optional ad-supported browser games should be supervised by an adult. The website edition uses browser checkout; the Mac App Store edition uses Apple in-app purchases and the account restrictions configured on the device.</p>
+<p>Purchases in the website edition and optional advertising pages should be supervised by an adult. The free Mac App Store edition has no purchases. Browser advertising is optional and governed by the advertising providers' policies.</p>
 
 <h2>5. Contact</h2>
 <p>Questions: <a href="mailto:gmlxo9917@gmail.com">gmlxo9917@gmail.com</a></p>
