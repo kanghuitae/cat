@@ -6,7 +6,7 @@
  *  page_view       자동 (gtag config) — 전 페이지
  *  app_download    앱 다운로드 클릭 — 양 플랫폼 공통 단일 이벤트   ★두 다운로드 핵심 지표
  *                    platform : "macos" | "windows"
- *                    method   : "dmg"   | "ms_store"
+ *                    method   : "dmg"   | "mac_app_store" | "ms_store"
  *                    link_url
  *  file_download   GA4 표준 파일 다운로드 — macOS .dmg 전용 (GA 기본 다운로드 리포트용)
  *                    file_name:"CatApp.dmg", file_extension:"dmg", platform:"macos"
@@ -66,8 +66,15 @@
 
     // 플랫폼 판별: href 가 1차 근거, data 힌트가 2차 보조
     const isMac = /\.dmg(?:$|[?#])/i.test(href) || hint === "download_click";
+    const isMacStore = (link.hostname === "apps.apple.com" && /\/id6780104132(?:[/?#]|$)/.test(link.pathname))
+      || hint === "download_click_mas";
     const isWin = /apps\.microsoft\.com|ms-windows-store:/i.test(href) || hint === "download_click_win";
     const isGumroad = /gumroad\.com\/l\//i.test(href);
+
+    if (isMacStore) {
+      track("app_download", { platform: "macos", method: "mac_app_store", link_url: href });
+      return;
+    }
 
     if (isMac) {
       // GA4 표준 file_download (.dmg). 페이지 언로드 없이 다운로드되므로 가로채지 않음.

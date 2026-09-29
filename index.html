@@ -94,6 +94,16 @@
     .pf { width:1.05em; height:1.05em; fill:currentColor; vertical-align:-0.15em; }
     .track h3 .pf { margin-right:6px; }
     .req { display:block; color:var(--muted); font-size:11px; margin-top:12px; }
+    .edition-note { color:var(--muted); font-size:12px; margin:16px auto 0; max-width:600px; }
+    .editions { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:16px; text-align:left; }
+    .edition { background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:22px; }
+    .edition h3 { font-size:16px; margin:0 0 8px; }
+    .edition p, .edition li { font-size:12px; color:var(--muted); }
+    .edition ul { padding-left:20px; margin:16px 0; }
+    .edition li { margin:8px 0; }
+    .edition .cta { font-size:13px; padding:10px 16px; }
+    .store-status { display:inline-block; border:1px dashed var(--line); border-radius:4px; padding:10px 16px; color:var(--muted); font-size:13px; }
+    .edition-tag { display:block; font-size:10px; color:var(--accent); margin-bottom:8px; }
 
     /* ── 걷는 고양이 (floor) ── */
     .stage { position:relative; height:110px; margin-top:30px; overflow:hidden;
@@ -160,20 +170,21 @@
   </svg>
   <header class="hero">
     <div class="wrap">
-      <span class="badge">macOS · Windows · First cat free</span>
+      <span class="badge">Desktop Cat · macOS &amp; Windows</span>
       <h1>A <span class="hl">tiny cat</span><br>is moving onto your desktop</h1>
       <p class="sub">A little company for your working day.
-        They wander, loaf and nap beside you. On your Mac, they even fetch your notifications.</p>
+        They wander, loaf and nap beside you. Give your cat a name, then double-click for a little love.</p>
       <div class="cta-row">
         <a class="cta" href="https://kanghuitae.github.io/cat/CatApp.dmg"
            data-analytics-event="download_click"
-           aria-label="Download Desktop Cat for macOS"><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg> Download for macOS — free</a>
+           aria-label="Download Desktop Cat website edition for macOS"><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg> macOS · Website edition</a>
         <a class="cta alt" href="https://apps.microsoft.com/detail/9p3lnmk46jjh"
            target="_blank" rel="noopener"
            data-analytics-event="download_click_win"
            aria-label="Desktop Cat for Windows — Microsoft Store"><svg class="pf" aria-hidden="true"><use href="#i-win"/></svg> Windows · Microsoft Store</a>
       </div>
       <span class="req">macOS 13 (Ventura) or later · Apple Silicon &amp; Intel  ·  Windows 10/11 (Microsoft Store)</span>
+      <p class="edition-note">Website edition: first cat free, optional extra adoptions are paid. Supplies and floor cleanup use browser ads. <a href="#mac-editions">Compare macOS editions</a></p>
       <img class="demo" src="assets/demo.gif" alt="Pixel cats walking, running and loafing on a desktop"
            width="900" fetchpriority="high"
            style="display:block;max-width:100%;margin:26px auto 0;image-rendering:pixelated;border-radius:8px;">
@@ -188,21 +199,51 @@
   </header>
 
   <main class="wrap">
+    <section id="mac-editions" aria-labelledby="editions-title">
+      <h2 id="editions-title">Choose your <span class="em">macOS edition</span></h2>
+      <div class="editions">
+        <article class="edition">
+          <span class="edition-tag">AVAILABLE NOW · DIRECT DOWNLOAD</span>
+          <h3>Website edition</h3>
+          <p>For a growing cat family and playful extras while you work.</p>
+          <ul>
+            <li>First cat free; choose from 12 breeds and coats for paid extra adoptions, up to 15 cats.</li>
+            <li>Notification banners, Dock badges and Claude Code session companions.</li>
+            <li>Browser ads replenish supplies and clean floor accidents.</li>
+            <li>Accessibility permission enables notification and Dock features. Basic petting and play work without it.</li>
+          </ul>
+          <a class="cta" href="https://kanghuitae.github.io/cat/CatApp.dmg" data-analytics-event="download_click">Download website edition</a>
+        </article>
+        <article class="edition">
+          <span class="edition-tag">MAC APP STORE · COMING SOON</span>
+          <h3>App Store edition</h3>
+          <p>For a simple, ad-free home with one orange cat.</p>
+          <ul>
+            <li>One orange cat to name, pet, feed and play with.</li>
+            <li>Offline supplies and immediate cleanup, with no ads or paid extra adoptions.</li>
+            <li>Optional Apple Reminders delivery after you grant permission.</li>
+            <li>Notification-banner fetching, Dock punching and coding-session companions are website-edition features.</li>
+          </ul>
+          <span class="store-status">Preparing for App Store release</span>
+        </article>
+      </div>
+    </section>
     <section id="features">
       <h2>Meet your new <span class="em">desk companion</span></h2>
       <div class="features">
         <div class="card"><div class="ic">🍞</div><h3>A little loaf beside your work</h3><p>Look up from a deadline and find a cat with its paws tucked in. A small reminder to take a breath.</p></div>
-        <div class="card"><div class="ic">📨</div><h3>Special delivery, by cat</h3><p>On macOS, your cat runs to incoming notification banners and carries them in its mouth. A very proud little messenger.</p></div>
-        <div class="card"><div class="ic">👊</div><h3>Unread badges get a paw</h3><p>On macOS, cats sit by unread Dock badges and tap them with a paw. Even reminders can be cute. 😼</p></div>
+        <div class="card"><span class="edition-tag">macOS · Website edition</span><div class="ic">📨</div><h3>Special delivery, by cat</h3><p>Your cat runs to incoming notification banners and carries them in its mouth. A very proud little messenger.</p></div>
+        <div class="card"><span class="edition-tag">macOS · Website edition</span><div class="ic">👊</div><h3>Unread badges get a paw</h3><p>Cats sit by unread Dock badges and tap them with a paw. Even reminders can be cute. 😼</p></div>
         <div class="card"><div class="ic">🧶</div><h3>One ball of yarn. Endless fun.</h3><p>Turn your cursor into a toy and your screen becomes a playground. These little cats can really jump.</p></div>
         <div class="card"><div class="ic">🍚</div><h3>Care brings you closer</h3><p>Fill their bowls and clean their litter boxes. Happy cats are good company. Hungry cats will let you know.</p></div>
-        <div class="card"><div class="ic">💻</div><h3>A coding companion</h3><p>A cat clocks in alongside your Claude Code session and jumps when the work is done. Your smallest teammate.</p></div>
+        <div class="card"><span class="edition-tag">macOS · Website edition</span><div class="ic">💻</div><h3>A coding companion</h3><p>A cat clocks in alongside your Claude Code session and jumps when the work is done. Your smallest teammate.</p></div>
         <div class="card"><div class="ic">❤️</div><h3>Give them a name</h3><p>Double-click to pet a cat and watch the hearts appear. Give it a name and make it part of your day.</p></div>
       </div>
     </section>
 
     <section id="colors" class="center">
       <h2>Find <span class="em">your cat</span> — 12 breeds &amp; coats</h2>
+      <p class="sub">The macOS website edition offers these extra adoptions. The App Store edition has one orange cat.</p>
       <div class="colors">
         <figure><img src="assets/idle-sphynx.png" alt="Sphynx cat pixel art" width="68" height="68"><figcaption>Sphynx <span style="color:var(--accent)">NEW</span></figcaption></figure>
         <figure><img src="assets/idle-orange.png" alt="Orange tabby cat pixel art" width="68" height="68"><figcaption>Orange tabby</figcaption></figure>
@@ -217,7 +258,7 @@
         <figure><img src="assets/idle-aby.png" alt="Abyssinian cat pixel art" width="68" height="68"><figcaption>Abyssinian</figcaption></figure>
         <figure><img src="assets/idle-norwegian.png" alt="Norwegian Forest cat pixel art" width="68" height="68"><figcaption>Norwegian Forest</figcaption></figure>
       </div>
-      <p class="sub" style="margin-top:22px">Your first cat is free forever. Choose the breed or coat you want for each extra adoption,
+      <p class="sub" style="margin-top:22px">Your first cat is free forever in the website edition. Choose the breed or coat you want for each paid extra adoption,
         with room for up to 15 cats. On macOS, they can chase and groom each other, too.</p>
     </section>
 
@@ -225,12 +266,13 @@
       <h2>Bring your cat <span class="em">home</span></h2>
       <div class="tracks">
         <div class="track">
-          <h3><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg>macOS</h3>
+          <h3><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg>macOS · Website edition</h3>
           <ol class="steps">
             <li>Open <code>CatApp.dmg</code> and drag CatApp into <b>Applications</b></li>
             <li>On first launch, confirm your language. English is the default; Korean or Japanese is suggested when detected on your device</li>
             <li>Open the app and find <b>🐱 in your menu bar</b> — your cat’s control panel</li>
-            <li>For notification fetching, enable CatApp in <b>System Settings → Privacy &amp; Security → Accessibility</b></li>
+            <li>Double-click your cat to <b>pet it and see hearts</b>. Drag to pick it up</li>
+            <li>Optional: for notification fetching and Dock punching, enable CatApp in <b>System Settings → Privacy &amp; Security → Accessibility</b>. You can enjoy basic petting and play without this permission</li>
           </ol>
         </div>
         <div class="track">
@@ -247,7 +289,7 @@
 
   <footer>
     <p>Desktop Cat — a little pixel companion</p>
-    <p>Made by Heetae Kang · <a href="https://gmlxo.gumroad.com/l/qgkil">Adopt another cat</a> · <a href="notes.html">Release notes</a> · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
+    <p>Made by Heetae Kang · <a href="https://gmlxo.gumroad.com/l/qgkil">Website edition: adopt another cat</a> · <a href="notes.html">Release notes</a> · <a href="privacy.html">Privacy policy</a> · <a href="support.html">Support</a></p>
     <p><a href="https://www.instagram.com/catcatcatcatmac/reels/" target="_blank" rel="noopener">📷 Instagram</a> · <a href="https://www.threads.com/@catcatcatcatmac" target="_blank" rel="noopener">🧵 Threads</a></p>
   </footer>
 </body>
