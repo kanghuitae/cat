@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- ── SEO 기본 ── -->
-  <title>고양이 키우기 — 화면에 작은 고양이가 이사 옵니다</title>
-  <meta name="description" content="일하는 당신 곁, 화면 구석에서 제 할 일 하며 사는 픽셀 고양이. 가끔 알림을 물어다 주고, 어느새 식빵을 굽고 있습니다. macOS·Windows, 한 마리는 평생 무료." />
+  <title>Desktop Cat · 나만없어고양이 — 화면 속 작은 동거묘</title>
+  <meta name="description" content="일하는 당신 곁, 이름 짓고 쓰다듬는 픽셀 고양이 Desktop Cat. macOS 웹사이트판은 첫 고양이 무료, 추가 입양 유료. 광고 없는 App Store판도 출시 준비 중입니다." />
   <meta name="author" content="kanghuitae" />
   <link rel="canonical" href="https://kanghuitae.github.io/cat/ko/" />
   <meta name="robots" content="index, follow" />
@@ -15,15 +15,15 @@
   <!-- ── Open Graph / Twitter ── -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ko_KR" />
-  <meta property="og:site_name" content="고양이 키우기" />
-  <meta property="og:title" content="고양이 키우기 — 화면에 작은 고양이가 이사 옵니다" />
+  <meta property="og:site_name" content="Desktop Cat" />
+  <meta property="og:title" content="Desktop Cat · 나만없어고양이 — 화면 속 작은 동거묘" />
   <meta property="og:description" content="화면 구석에서 제 할 일 하며 사는 픽셀 고양이. macOS·Windows, 한 마리는 평생 무료." />
-  <meta property="og:url" content="https://kanghuitae.github.io/cat/" />
+  <meta property="og:url" content="https://kanghuitae.github.io/cat/ko/" />
   <meta property="og:image" content="https://kanghuitae.github.io/cat/assets/og.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="고양이 키우기 — 화면에 작은 고양이가 이사 옵니다" />
+  <meta name="twitter:title" content="Desktop Cat · 나만없어고양이 — 화면 속 작은 동거묘" />
   <meta name="twitter:description" content="화면 구석에서 제 할 일 하며 사는 픽셀 고양이. macOS·Windows, 한 마리는 평생 무료." />
   <meta name="twitter:image" content="https://kanghuitae.github.io/cat/assets/og.png" />
 
@@ -40,7 +40,7 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "고양이 키우기",
+    "name": "Desktop Cat",
     "applicationCategory": "EntertainmentApplication",
     "operatingSystem": "macOS 13.0+, Windows 10/11",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
@@ -93,6 +93,16 @@
     .pf { width:1.05em; height:1.05em; fill:currentColor; vertical-align:-0.15em; }
     .track h3 .pf { margin-right:6px; }
     .req { display:block; color:var(--muted); font-size:11px; margin-top:12px; }
+    .edition-note { color:var(--muted); font-size:12px; margin:16px auto 0; max-width:600px; }
+    .editions { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:16px; text-align:left; }
+    .edition { background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:22px; }
+    .edition h3 { font-size:16px; margin:0 0 8px; }
+    .edition p, .edition li { font-size:12px; color:var(--muted); }
+    .edition ul { padding-left:20px; margin:16px 0; }
+    .edition li { margin:8px 0; }
+    .edition .cta { font-size:13px; padding:10px 16px; }
+    .store-status { display:inline-block; border:1px dashed var(--line); border-radius:4px; padding:10px 16px; color:var(--muted); font-size:13px; }
+    .edition-tag { display:block; font-size:10px; color:var(--accent); margin-bottom:8px; }
 
     /* ── 걷는 고양이 (floor) ── */
     .stage { position:relative; height:110px; margin-top:30px; overflow:hidden;
@@ -159,22 +169,23 @@
   </svg>
   <header class="hero">
     <div class="wrap">
-      <span class="badge">macOS · Windows · 무료</span>
+      <span class="badge">Desktop Cat · 나만없어고양이</span>
       <h1>당신의 화면에<br><span class="hl">작은 고양이</span>가 이사 옵니다</h1>
       <p class="sub">일하는 동안 화면 한켠에서 제 할 일을 하며 삽니다.
-        문득 보면 식빵을 굽고 있고, 어떤 날은 당신 대신 알림을 물어다 줘요.</p>
+        이름을 붙이고 더블클릭으로 쓰다듬어 주세요. 문득 보면 식빵을 굽고 있을 거예요.</p>
       <div class="cta-row">
         <a class="cta" href="https://kanghuitae.github.io/cat/CatApp.dmg"
            data-analytics-event="download_click"
-           aria-label="고양이 키우기 맥 앱 다운로드"><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg> macOS 무료 다운로드</a>
+           aria-label="Desktop Cat macOS 웹사이트판 다운로드"><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg> macOS · 웹사이트판 다운로드</a>
         <a class="cta alt" href="https://apps.microsoft.com/detail/9p3lnmk46jjh"
            target="_blank" rel="noopener"
            data-analytics-event="download_click_win"
-           aria-label="고양이 키우기 윈도우 앱 — Microsoft Store"><svg class="pf" aria-hidden="true"><use href="#i-win"/></svg> Windows · Microsoft Store</a>
+           aria-label="Desktop Cat 윈도우 앱 — Microsoft Store"><svg class="pf" aria-hidden="true"><use href="#i-win"/></svg> Windows · Microsoft Store</a>
       </div>
       <span class="req">macOS 13 (Ventura) 이상 · Apple Silicon &amp; Intel  ·  Windows 10/11 (Microsoft Store)</span>
+      <p class="edition-note">웹사이트판은 첫 고양이 무료, 추가 입양 유료입니다. 보급품과 바닥 청소에는 브라우저 광고가 사용돼요. <a href="#mac-editions">macOS 배포판 비교</a></p>
       <img class="demo" src="../assets/demo.gif" alt="픽셀 고양이들이 화면 위에서 걷고 뛰고 식빵 굽는 데모"
-           width="900" loading="lazy"
+           width="900" fetchpriority="high"
            style="display:block;max-width:100%;margin:26px auto 0;image-rendering:pixelated;border-radius:8px;">
     </div>
     <div class="stage" aria-hidden="true">
@@ -187,21 +198,51 @@
   </header>
 
   <main class="wrap">
+    <section id="mac-editions" aria-labelledby="editions-title">
+      <h2 id="editions-title">내게 맞는 <span class="em">macOS 배포판</span></h2>
+      <div class="editions">
+        <article class="edition">
+          <span class="edition-tag">지금 다운로드 · 직접 설치</span>
+          <h3>웹사이트판</h3>
+          <p>식구를 늘리고, 일하는 동안 장난스러운 기능도 즐기고 싶다면.</p>
+          <ul>
+            <li>첫 고양이 무료. 12가지 묘종·모색 중 추가 입양은 유료이며 최대 15마리까지 함께 살 수 있어요.</li>
+            <li>알림 배너 물어오기, Dock 배지 냥냥펀치, Claude Code 작업 동행.</li>
+            <li>보급품 충전과 바닥에 남긴 배변 청소에는 브라우저 광고가 사용돼요.</li>
+            <li>알림·Dock 기능에는 손쉬운 사용 권한이 필요해요. 기본 쓰다듬기와 놀이는 권한 없이 즐길 수 있어요.</li>
+          </ul>
+          <a class="cta" href="https://kanghuitae.github.io/cat/CatApp.dmg" data-analytics-event="download_click">웹사이트판 다운로드</a>
+        </article>
+        <article class="edition">
+          <span class="edition-tag">MAC APP STORE · 출시 준비 중</span>
+          <h3>App Store판</h3>
+          <p>광고 없이 치즈 고양이 한 마리와 간단하게 함께 살고 싶다면.</p>
+          <ul>
+            <li>치즈 고양이 한 마리에게 이름을 짓고, 쓰다듬고, 밥을 주고 놀아주세요.</li>
+            <li>오프라인 보급품과 즉시 청소. 광고와 유료 추가 입양이 없어요.</li>
+            <li>원하면 권한을 허용하고 Apple 미리 알림을 물어오게 할 수 있어요.</li>
+            <li>일반 알림 배너·Dock 배지·코딩 세션 동행은 웹사이트판에서 제공해요.</li>
+          </ul>
+          <span class="store-status">App Store 출시 준비 중</span>
+        </article>
+      </div>
+    </section>
     <section id="features">
       <h2>같이 살다 보면 <span class="em">이런 일</span>이 생깁니다</h2>
       <div class="features">
         <div class="card"><div class="ic">🍞</div><h3>문득 보면 식빵을 굽고 있어요</h3><p>마감에 쫓기다 고개를 들면, 화면 구석에서 얌전히 앞발을 모으고 있습니다. 잠깐 숨 돌리라는 신호일지도요.</p></div>
-        <div class="card"><div class="ic">📨</div><h3>소식을 물어다 줍니다</h3><p>새 알림이 뜨면 쪼르르 달려가 입에 물고 옵니다. 받아줄 때까지 의기양양하게 들고 다녀요.</p></div>
-        <div class="card"><div class="ic">👊</div><h3>안 읽은 건 못 참아요</h3><p>읽지 않은 알림 배지가 쌓이면 그 앞에 앉아 앞발로 톡톡. 답장하라는 잔소리도 이 정도면 귀엽죠. 😼</p></div>
+        <div class="card"><span class="edition-tag">macOS · 웹사이트판</span><div class="ic">📨</div><h3>소식을 물어다 줍니다</h3><p>새 알림이 뜨면 쪼르르 달려가 입에 물고 옵니다. 받아줄 때까지 의기양양하게 들고 다녀요.</p></div>
+        <div class="card"><span class="edition-tag">macOS · 웹사이트판</span><div class="ic">👊</div><h3>안 읽은 건 못 참아요</h3><p>읽지 않은 알림 배지가 쌓이면 그 앞에 앉아 앞발로 톡톡. 답장하라는 잔소리도 이 정도면 귀엽죠. 😼</p></div>
         <div class="card"><div class="ic">🧶</div><h3>털실 하나면 한참 놀아요</h3><p>마우스 커서가 털실이 되는 순간, 온 집(화면)이 운동장이 됩니다. 점프 실력이 꽤 좋아요.</p></div>
         <div class="card"><div class="ic">🍚</div><h3>챙겨줄수록 가까워져요</h3><p>밥그릇을 채워주고 화장실을 치워주세요. 잘 챙겨주면 기분이 좋아지고, 굶기면… 시위합니다.</p></div>
-        <div class="card"><div class="ic">💻</div><h3>Claude Code와 함께 일해요</h3><p>코딩 중이면 고양이가 옆에서 타닥타닥 같이 일하고, 작업이 끝나면 폴짝 뛰며 알려줍니다. 개발자의 작은 동료.</p></div>
+        <div class="card"><span class="edition-tag">macOS · 웹사이트판</span><div class="ic">💻</div><h3>Claude Code와 함께 일해요</h3><p>코딩 중이면 고양이가 옆에서 타닥타닥 같이 일하고, 작업이 끝나면 폴짝 뛰며 알려줍니다. 개발자의 작은 동료.</p></div>
         <div class="card"><div class="ic">❤️</div><h3>이름을 지어주세요</h3><p>더블클릭으로 쓰다듬으면 하트가 떠요. 이름을 붙이는 순간부터, 그냥 앱이 아니라 우리 집 고양이입니다.</p></div>
       </div>
     </section>
 
     <section id="colors" class="center">
       <h2>어떤 아이와 <span class="em">살게 될까요</span> — 12가지 묘종</h2>
+      <p class="sub">macOS 웹사이트판의 추가 입양 목록입니다. App Store판에서는 치즈 고양이 한 마리와 함께해요.</p>
       <div class="colors">
         <figure><img src="../assets/idle-sphynx.png" alt="스핑크스 고양이 픽셀 아트" width="68" height="68"><figcaption>스핑크스 <span style="color:var(--accent)">NEW</span></figcaption></figure>
         <figure><img src="../assets/idle-orange.png" alt="치즈 고양이 픽셀 아트" width="68" height="68"><figcaption>치즈</figcaption></figure>
@@ -216,7 +257,7 @@
         <figure><img src="../assets/idle-aby.png" alt="아비시니안 고양이 픽셀 아트" width="68" height="68"><figcaption>아비시니안</figcaption></figure>
         <figure><img src="../assets/idle-norwegian.png" alt="노르웨이숲 고양이 픽셀 아트" width="68" height="68"><figcaption>노르웨이숲</figcaption></figure>
       </div>
-      <p class="sub" style="margin-top:22px">첫 고양이는 평생 무료. 원하는 품종을 직접 골라 입양하세요. 최대 15마리까지,
+      <p class="sub" style="margin-top:22px">웹사이트판의 첫 고양이는 평생 무료. 추가 입양은 유료이며 원하는 품종을 직접 고를 수 있어요. 최대 15마리까지,
         식구가 늘면 둘이서 우다다 달리기도 하고 마주 앉아 서로 그루밍도 해줍니다.</p>
     </section>
 
@@ -224,12 +265,13 @@
       <h2>데려오는 <span class="em">방법</span></h2>
       <div class="tracks">
         <div class="track">
-          <h3><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg>macOS</h3>
+          <h3><svg class="pf" aria-hidden="true"><use href="#i-apple"/></svg>macOS · 웹사이트판</h3>
           <ol class="steps">
             <li><code>CatApp.dmg</code>를 열고 고양이를 <b>응용 프로그램</b> 폴더로 드래그</li>
             <li>처음 실행할 때 감지된 기기 언어를 확인하세요. 영어·한국어·일본어 중 선택할 수 있어요</li>
             <li>실행하면 <b>메뉴 막대에 🐱</b>가 나타나요 — 이 집의 초인종입니다</li>
-            <li>알림 심부름까지 시키려면 <b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>을 한 번만 허락해 주세요</li>
+            <li>고양이를 <b>더블클릭해 쓰다듬으면 하트</b>가 떠요. 드래그하면 들어 올릴 수 있어요</li>
+            <li>선택 사항: 알림·Dock 기능을 쓰려면 <b>시스템 설정 → 개인정보 보호 및 보안 → 손쉬운 사용</b>을 허용해 주세요. 기본 쓰다듬기와 놀이는 이 권한 없이 즐길 수 있어요</li>
           </ol>
         </div>
         <div class="track">
@@ -245,8 +287,8 @@
   </main>
 
   <footer>
-    <p>고양이 키우기 — 픽셀로 만든 작은 동거묘</p>
-    <p>만든이 강희태 · <a href="https://gmlxo.gumroad.com/l/qgkil">고양이 입양권</a> · <a href="notes.html">패치노트</a> · <a href="privacy.html">개인정보 처리방침</a> · <a href="support.html">고객 지원</a></p>
+    <p>Desktop Cat · 나만없어고양이 — 픽셀로 만든 작은 동거묘</p>
+    <p>만든이 강희태 · <a href="https://gmlxo.gumroad.com/l/qgkil">웹사이트판 추가 입양권</a> · <a href="notes.html">패치노트</a> · <a href="privacy.html">개인정보 처리방침</a> · <a href="support.html">고객 지원</a></p>
     <p><a href="https://www.instagram.com/catcatcatcatmac/reels/" target="_blank" rel="noopener">📷 Instagram</a> · <a href="https://www.threads.com/@catcatcatcatmac" target="_blank" rel="noopener">🧵 Threads</a></p>
   </footer>
 </body>
